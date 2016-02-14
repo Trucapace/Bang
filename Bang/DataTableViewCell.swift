@@ -9,6 +9,10 @@
 import UIKit
 
 class DataTableViewCell: UITableViewCell {
+    
+    //@IBOutlet weak var imageLabel: UILabel!
+    @IBOutlet weak var voteTextLabel: UILabel!
+    @IBOutlet weak var voteImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +24,4 @@ class DataTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol AddTableViewCellDelegate {
+    func addARowButtonPressed()
+}
+
 class AddTableViewCell: UITableViewCell {
+    
+    var delegate: AddTableViewCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +26,10 @@ class AddTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func addARowButtonPressed(sender: UIButton) {
 
+        delegate?.addARowButtonPressed()
+        
+    }
 }

@@ -10,4 +10,6 @@ import UIKit
 
 class EmoticonCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var emoticonImageView: UIImageView!
+    
 }

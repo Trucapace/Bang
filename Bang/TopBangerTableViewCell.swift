@@ -8,7 +8,14 @@
 
 import UIKit
 
-class TopBangerTableViewCell: UITableViewCell {
+class TopBangerTableViewCell: PFTableViewCell {
+    
+    
+    @IBOutlet weak var rankLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var bangsReceivedLabel: UILabel!
+    @IBOutlet weak var avatarImage: UIImageView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

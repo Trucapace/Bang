@@ -8,8 +8,20 @@
 
 import UIKit
 
+protocol ProductTableViewCellDelegate {
+    func priceButtonPressed(indexPath: NSIndexPath)
+}
+
 class ProductTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var priceButton: UIButton!
+    
+    
+    var delegate: ProductTableViewCellDelegate?
+    var indexPath: NSIndexPath?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +32,11 @@ class ProductTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func priceButtonPressed(sender: UIButton) {
+        delegate?.priceButtonPressed(indexPath!)
+    }
+    
+    
 
 }
