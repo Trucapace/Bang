@@ -9,6 +9,13 @@
 import UIKit
 
 class FollowsTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var followImage: UIImageView!
+    @IBOutlet weak var followName: UILabel!
+    @IBOutlet weak var followBangedCount: UILabel!
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

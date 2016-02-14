@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Bang": {
+      "applicationId": "4jXAOS0H4RznaCNQVN4f7H7V29BYYy3dTEGpIqDh"
+    },
+    "_default": {
+      "link": "Bang"
+    }
+  }
+}
